@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1d4ed8;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #1d4ed8;
+  }
+  
+  .cta-button {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #1d4ed8;
+    cursor: pointer;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .cta-button {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    /* Puedes agregar JS para mostrar el menú al hacer click */
+  }
+  
